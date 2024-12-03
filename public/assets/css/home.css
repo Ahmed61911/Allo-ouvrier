@@ -1,0 +1,321 @@
+/* Style général */
+
+body {
+  
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Changez la couleur de fond selon vos préférences */
+  }
+
+
+.search-container {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px; /* Ajustez la marge supérieure selon vos préférences */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  
+}
+
+  /* En-tête */
+  
+  #afficher-plus {
+    
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 25px;
+    width: 150px;
+    margin-top: 3%;
+
+  }
+
+       /* width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #009688;
+    background: transparent;
+    color: #ffffff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;*/
+  
+  /* Héros */
+  .hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.991),rgba(81, 81, 81, 0.75)),url("../images/backg1.png");
+    text-align: center;
+    padding: 100px 0;
+    background-size: 100%;
+    background-position: center;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    
+
+  }
+  
+  .hero_logo {
+    max-width: 100%;
+    height: auto;
+    position: relative;
+    top: 40%;
+    left: 10%;
+  }
+  
+  .Design{
+    max-width: 100%;
+    height: auto;
+    position: relative;
+    top: 40%;
+    right: -10%;
+    
+  } 
+  .hero h1{
+    text-align: right;
+    font-size: 50px;
+    color: rgb(253, 253, 253);
+    margin: 10% 5% 0 10%;
+   }
+
+  
+  
+  /* Services */
+  .services {
+    padding: 20px;
+  }
+  
+  .liste-services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .service {
+    width: 25%;
+    text-align: center;
+    margin: 10px;
+  }
+  
+  .service img {
+    width: 260px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  #afficher-plus-services {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 25px;
+    width: 150px;
+    justify-self: center;
+  }
+  
+  /* À propos */
+  main{
+    position: relative;
+  }
+  .a-propos {
+    margin-top: 5vh;
+    padding: 20px;
+    background: linear-gradient(90deg, rgba(151,255,168,1) 0%, rgba(105,230,255,1)100%);
+    display: flex;
+    flex-direction: row;
+    height: 60vh;
+    justify-content: center;
+    text-align: center;
+    gap: 10vh;
+   
+  }
+  .a-propos img{
+     width: 440px;
+     display: block;
+     object-fit: contain;
+  }
+  
+  /* Pied de page */
+  footer {
+    background-color: #f8f9fa;
+    text-align: center;
+  }
+
+
+  #carte_1{
+    background-image: url('../images/travailleur-entretien.jpg');
+}
+#carte_2{
+    background-image: url('../images/electricien.jpg');
+}
+#carte_3{
+    background-image: url('../images/disposition-outils.jpg');
+}
+
+.categorie_box{
+    display: flex ;
+    flex-direction: column;
+    background: linear-gradient(90deg, rgba(151,255,168,1) 0%, rgba(105,230,255,1) 100%);
+    padding: 10vh 20vh 10vh 20vh;
+    align-items: center;
+    justify-content: center;
+}
+.intro_cat{
+    font-size: 22px;
+    width: 40%;
+    margin: 40px 0 60px 0;
+    text-align: center;
+}
+.categorie_carte{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+    width: 50vh;
+    height: 50vh;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.8;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 20px 40px 20px 40px;  
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+.categorie_carte:hover,
+.categorie_carte:focus{
+    cursor: pointer;
+    opacity: 1;
+    transition: 0.5s;
+}
+.carte_label{
+    align-self: center;
+    background-color: #ffffff7a;
+    font-size: 22px;
+    width: 25vh;
+    padding: 1vh;
+    border-radius: 5px;
+}
+.carte_label:hover,
+.carte_label:focus{
+    cursor: pointer;
+}
+
+.scnd_div{
+    background-color: rgb(255, 255, 255);
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+    padding: 5%;
+    margin: 0;
+}
+table{
+    justify-self: center;
+    width: 100%;
+}
+table td{
+  display: flex;
+  flex-direction: row;
+}
+.discrp{
+ 
+  justify-content: center;
+  align-content: center;
+  padding-left: 5%;
+}
+
+.apopos_gauche {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding-top: 4%;
+}
+
+
+
+
+
+.footer-container {
+  display: flex;
+  height: 25vh;
+  justify-content: space-around;
+  background-color: #333;
+  color: white;
+  padding: 0px 20px 30px 0px;
+}
+.footer-section-about{
+  width: 50%;
+  text-align: center;
+  padding: 0 20%;
+  
+}
+.footer-section-links{
+  width: 25%;
+}.footer-section-social-media{
+  
+  width: 25%;
+}
+.footer-section {
+  flex: 1;
+  padding: 0 20px;
+}
+
+.footer-section h2 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.footer-section p, .footer-section ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-section a {
+  color: white;
+  text-decoration: none;
+  margin: 0 0 10px 0;
+  display: block;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 20px;
+}
+
+.footer-bottom {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 14px;
+}
+
+.footer-bottom p {
+  margin: 0;
+}

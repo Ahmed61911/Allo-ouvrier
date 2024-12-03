@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: "Rubik", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: rgb(151,255,168);
+    background: linear-gradient(90deg, rgba(151,255,168,1) 0%, rgba(105,230,255,1) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+table{
+    width: 60%;
+    margin: 5vh 0 10vh 0;
+    min-height: 60vh;
+    align-items: start;
+}
+.carte_ouvrier{
+    margin: 1vh 0 1vh 0;
+    height: 35vh;
+    border-radius: 20px;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: row;
+}
+.info_gauche{
+    min-width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.etoiles{
+    margin-top: 4vh;
+    color: #5E5DF0;
+}
+
+
+.info_droit{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+.nom_dispo{
+    display: flex;
+    flex-direction: row;
+    padding: 6vh 5vh 2vh 0vh;
+    justify-content: space-between; 
+    align-items: center;
+    height: 20%; 
+}
+.nom_compte{
+    font-size: 26px;
+}
+
+
+.description{
+    height: 50%;
+    padding: 4vh 4vh 4vh 0vh;
+    text-align: justify;
+    font-size: 14px;
+}
+
+.heure_btn{
+    height: 25%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 0 4vh 0 0vh;
+}
+.heures_disponibites{
+    font-size: 16px;
+    color: #2b2b2b;
+}
+.btn_carte{
+    background: #5E5DF0;
+    border-radius: 999px;
+    box-shadow: #5E5DF0 0 10px 20px -10px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 18px;
+    opacity: 1;
+    outline: 0 solid transparent;
+    padding: 8px 18px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: fit-content;
+    word-break: break-word;
+    border: 0;
+}

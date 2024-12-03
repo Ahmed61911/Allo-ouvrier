@@ -1,0 +1,450 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+body{
+    background: rgb(151,255,168);
+    background: linear-gradient(90deg, rgba(151,255,168,1) 0%, rgba(105,230,255,1) 100%);    
+    font-family: "Rubik", sans-serif;
+    
+}
+.my_profil_ouvrier{
+    background-color: #f05d5d;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#main_form{
+    margin: 3% 0 3% 0;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    width: 75%;
+}
+.infos_perso{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+/*top left info box*/
+.info_div{
+    margin-left: 10%;
+}
+.profile_image_card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    width: 25vw;
+    height: 75vh;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    margin-right: 50px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+.profile_image_card img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.profile_image_card h4 {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.profile_image_card button {
+    background: #f05d5d;
+    border-radius: 999px;
+    box-shadow: #f05d5d 0 10px 20px -10px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    opacity: 1;
+    outline: 0 solid transparent;
+    padding: 8px 18px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: fit-content;
+    word-break: break-word;
+    border: 0;
+}
+.separation_line{
+    position: relative;
+    display: block;
+    height: 4px;
+    width: 70%;
+    border-radius: 100%;
+    background: #8585857e;
+    margin: 60px 0 60px 0;
+}
+/*top right info box*/
+.general_info_card {
+    background-color: #fff;
+    padding: 5%;
+    height: 95vh;
+    width: 40vw;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+.general_info_card h2 {
+    font-weight: bold;
+    text-align: center;
+}
+.general_info_card label {
+    display: block;
+    text-align: left    ;
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: bold;
+}
+.general_info_card input {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 14px;
+    text-align: center;
+    color: darkslateblue;
+}
+/*middle infos box*/
+.work_info{
+    margin-top: 5vh;
+    align-self: center;
+    background-color: #fff;
+    padding: 5% 10%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+.work_info label {
+    display: block;
+    text-align: left    ;
+    margin-bottom: 2%;
+    margin-top: 3%;
+    font-size: 16px;
+    font-weight: bold;
+}
+.work_info input[type="time"] {
+    width: 10%;
+    padding: 5px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 14px;
+    text-align: center;
+    color: darkslateblue;
+}
+.work_info select {
+    width: 25%;
+    padding: 5px;
+    margin: 0% 10%;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: black;
+}
+.work_info textarea {
+    width: 100%;
+    height: 100px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    text-align: start;    
+    font-family: "Rubik", sans-serif;
+}
+.fonctionContainer{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    min-height: 45px;
+}
+.selectedFonctions{
+    display: block;
+    width: 18%;
+    min-height: 30px;
+    margin: 1%;
+    background-color: #f05d5d;
+}
+.item{
+    display: block;
+    background-color: rgba(172, 225, 255, 0.452);
+    min-width: 10vw;
+    height: 25px;
+    line-height: 25px;
+    margin: 5px;
+    font-size: 12px;   
+    font-family: "Rubik", sans-serif;
+    text-align: center;
+    border: #c7c7c7 1px solid;
+    border-radius: 999px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+.item button{
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    width: 20px;
+    height: 20px;
+    justify-content: center;
+    font-size: 10px;
+    font-family: "Rubik", sans-serif;
+    font-weight: bold;
+    text-align: center;
+    border: none;
+    border-radius: 999px;
+    cursor: pointer;
+    vertical-align: middle;
+    right: 2%;
+    bottom: 10%;
+}
+/*gallery box*/
+.gallery_box{
+    margin-top: 5vh;
+    align-self: center;
+    background-color: #fff;
+    padding: 5% 10%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+#gallery_btn{
+    border-radius: 999px;
+    display: block;
+    background-color: rgb(0, 110, 255);
+    color: #ffffff;
+    position: relative;
+    cursor: pointer;
+    text-align: center;
+    left: 10%;
+    margin: 5% 0 5% 0 ;
+    padding: 10px;
+    box-shadow: rgb(0, 110, 255) 0 10px 20px -10px;
+    box-sizing: border-box;
+    font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    opacity: 1;
+    outline: 0 solid transparent;
+    padding: 8px 18px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: fit-content;
+    word-break: break-word;
+    border: 0;
+
+}
+#gallery_btn i{
+    font-size: 24px;
+    position: relative;
+    top: 5%;
+}
+#gallery_btn:hover{
+    background-color: rgb(0, 67, 155);
+    transition: 0.5s;
+}
+.gallery_form{
+    display: inline;
+}
+#gallery_input{
+    display: none;
+}
+#gallery{
+    height: auto;
+    max-width: 100%;
+    background-color: #ffffff8a;
+    text-align: left;
+    border-radius: 5px;
+}
+.gallery_img{
+    height: 160px;
+    width: 27%;
+    margin: 20px 0 20px 40px;
+    border-radius: 5px;
+
+}
+.gallery_img:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
+.upload_gallery{
+    background: #f05d5d;
+    border-radius: 999px;
+    box-shadow: #f05d5d 0 10px 20px -10px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    opacity: 1;
+    outline: 0 solid transparent;
+    padding: 8px 18px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: fit-content;
+    word-break: break-word;
+    border: 0;
+}
+
+/*submit button*/
+.main_btn{
+    border-radius: 999px;
+    display: block;
+    background-color: rgb(0, 110, 255);
+    color: #ffffff;
+    position: relative;
+    cursor: pointer;
+    text-align: center;
+    margin: 1% 0 1% 0 ;
+    padding: 10px;
+    box-shadow: rgb(0, 110, 255) 0 10px 20px -10px;
+    box-sizing: border-box;
+    font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    opacity: 1;
+    outline: 0 solid transparent;
+    padding: 8px 18px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: fit-content;
+    word-break: break-word;
+    border: 0;
+}
+.main_btn:hover{
+    background-color: rgb(0, 67, 155);
+    transition: 0.5s;
+}
+/*modal*/
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 90%;
+    max-height: 90%;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.delete{
+    position: absolute;
+    top: 15px;
+    left: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+.delete:hover,
+.delete:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*delete pop up*/
+.pop_up_supression{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(53, 53, 53, 0.514);
+    justify-content: center;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+}
+.delete_form{
+    padding: 0.1% 0 0 0;
+    margin: 3% 20% 10% 25%;
+    display: block;
+    width: 50%;
+    height: 30%;
+    border-radius: 10px;
+    background-color: beige;
+}
+.delete_form p{
+    margin-top: 8%;
+    font-size: 20px;
+}
+.del_btn{
+    margin: 5%;
+    display: inline-block;
+    height: 15%;
+    width: 20%;
+    font-size: 15px;
+    border: none;
+    border-radius: 2px;
+}
+.del_btn:hover{
+    cursor: pointer;
+}
+#yes_btn{
+    background-color: rgb(255, 91, 91);
+}
+#yes_btn:hover{
+    background-color: rgb(255, 22, 22);
+    transition: 1s;
+}
+#no_btn{
+    background-color: rgb(91, 91, 255);
+}
+#no_btn:hover{
+    background-color: rgb(22, 22, 255);
+    transition: 1s;
+}
