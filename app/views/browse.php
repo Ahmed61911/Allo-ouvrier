@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="<?php echo ROOT?>/assets/css/browse.css">
     <link rel="stylesheet" href="<?php echo ROOT?>/assets/css/font-awesome-4.7.0/css/font-awesome.min.css">
 
-    <title>navigation</title>
+    <title>Navigation</title>
 </head>
 <body>
     <br><br>
